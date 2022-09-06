@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+<nav class="bg-gray-100">
+    <div class="max-w-7xl mx-auto px-2 py-4 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Heroicon name: outline/menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex-shrink-0 flex items-center">
+              <img class="block lg:hidden h-14 w-auto" src="images/sLogo.png" alt="Workflow">
+              <img class="hidden lg:block h-14 w-auto" src="images/sLogo.png" alt="Workflow">
+            </div>
+        </div>
+        <div class="items-right justify-right sm:items-stretch sm:justify-end">
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page"><b>Home</b></a>
+  
+              <a href="#" class="text-black hover:bg-blue-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">View Scholarships</a>
+  
+              <a href="#" class="text-black hover:bg-blue-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+            
+              <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">Sign in</button>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+  
+        <a href="#" class="bg-gray-900 text-white hover:bg-blue-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+  
+        <a href="#" class="text-black-300 hover:bg-blue-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">View Scholarships</a>
+  
+        <a href="#" class="text-black-300 hover:bg-blue-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+      
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">Sign in</button>
+      </div>
+    </div>
+  </nav>
+    </header>
+    <div class="container mx-auto px-4 py-56 sm:px-6 xl:px-12 bg-gradient-to-r from-blue-400 to-blue-900">
+        <div class="flex flex-col items-center justify-center space-y-6 text-center">
+          <h1 class="text-4xl font-bold text-white tracking-normal sm:text-5xl lg:text-6xl"><u>Scholarships</u>, at our hand.</h1>
+          <p class="max-w-screen-sm text-lg text-white sm:text-2xl">A one-stop solution in monitoring USTP scholarships</p>
+          <button class="w-full py-3 px-6 text-center text-white rounded-xl transition bg-yellow-500 shadow-xl hover:bg-yellow-600 active:bg-yellow-600 focus:bg-yellow-600 sm:w-max">EXPLORE</button>
+        </div>
+    </div>
+    <div class="py-24 bg-white">
+        <div  class="container m-auto px-6 space-y-8 text-gray-500 md:px-12 lg:px-20">
+            <div class="justify-center text-center gap-6 md:text-left md:flex lg:items-center  lg:gap-16">
+                <div class="order-last mb-6 space-y-6 md:mb-0 md:w-6/12 lg:w-6/12">
+                    <h1 class="text-4xl text-gray-700 font-bold md:text-5xl">Who we are?</h1>
+                    <p class="text-lg">At the USTP Admission and Scholarships Office, we care for our scholars. By monitoring their progress in their academic journey, we provide the best possible solution to give essential services and programs for their scholarship.</p>
+                    <div class="flex flex-row-reverse flex-wrap justify-center gap-4 md:gap-6 md:justify-end">
+                        <button type="button" title="Learn More" class="w-full py-3 px-6 text-center rounded-xl transition bg-yellow-500 shadow-xl hover:bg-yellow-600 active:bg-yellow-600 focus:bg-yellow-600 sm:w-max">
+                            <span class="block text-white font-semibold">
+                                Learn More
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-5 grid-rows-4 gap-4 md:w-5/12 lg:w-6/12">
+                    <div class="col-span-2 row-span-4">
+                        <img src="https://tailus.io/sources/blocks/ecommerce-site/preview/images/products/kushagra.webp" class="rounded-full" width="640" height="960" alt="shoes" loading="lazy">
+                    </div>
+                    <div class="col-span-2 row-span-2">
+                        <img src="https://tailus.io/sources/blocks/ecommerce-site/preview/images/products/iman.webp" class="w-full h-full object-cover object-top rounded-xl" width="640" height="640" alt="shoe" loading="lazy">
+                    </div>
+                    <div class="col-span-3 row-span-3">
+                        <img src="https://tailus.io/sources/blocks/ecommerce-site/preview/images/products/daniel.webp" class="w-full h-full object-cover object-top rounded-xl" width="640" height="427" alt="shoes" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
